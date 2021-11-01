@@ -2,11 +2,16 @@
 
 For lecture 10 (November 2, 2021) of https://github.com/anand0xff/FourierOpticsJHU2021
 
+NOTE:  around Nov 2, regularly reload this page as likely changes will occur.
 
 ## Combination Techniques
 
 
-* [feather](https://casa.nrao.edu/casadocs/casa-5.4.1/image-combination/feather)  - [talk by Ginsburg](https://keflavich.github.io/talks/FeatheringPresentation/FeatheringPresentation.slides.html?transition=fast); see also the [uvcombine](https://github.com/radio-astro-tools/uvcombine/) package
+* [feather in CASA](https://casa.nrao.edu/casadocs/casa-5.4.1/image-combination/feather) 
+* casaguides: [M100 combination in CASA 5.7](https://casaguides.nrao.edu/index.php?title=M100_Band3_Combine_5.7) or
+  [M100 combination in CASA 6.1](https://casaguides.nrao.edu/index.php?title=M100_Band3_Combine_6.1)
+* [dc2019 talk by Ginsburg](https://keflavich.github.io/talks/FeatheringPresentation/FeatheringPresentation.slides.html?transition=fast); 
+    see also his [uvcombine](https://github.com/radio-astro-tools/uvcombine/) package
 * [tp2vis](https://github.com/tp2vis/distribute)
 * [hybrid](https://sites.google.com/site/jenskauffmann/research-notes/adding-zero-spa)
 * [sdintimaging](https://github.com/urvashirau/WidebandSDINT)
@@ -16,8 +21,11 @@ For lecture 10 (November 2, 2021) of https://github.com/anand0xff/FourierOpticsJ
 ## Data needed
 
 We use the M100 data set as described in CASA's wiki, but since this data is 23 GB, it can be culled down to 100MB, which can
-be easily downloaded from ....    These are 3 datasets: ALMA 12m, ALMA 7m and ALMA ACA (single dish), each with 70 channels
+be easily downloaded from http://admit.astro.umd.edu/~teuben/QAC/qac_bench5.tar.gz   These are 3 datasets: ALMA 12m, ALMA 7m and ALMA ACA (single dish), each with 70 channels
 of 5 km/s width.
+
+* ALMA
+* PHANGS-ALMA (CO(2-1))
 
 ## Software 
 
@@ -25,7 +33,11 @@ of 5 km/s width.
 * tp2vis: https://github.com/tp2vis/distribute  or more experimental, via QAC: https://github.com/teuben/QAC/
 * peel: https://iopscience.iop.org/article/10.3847/2515-5172/ab35d5/meta
 * Radio Astro Tools:  http://radio-astro-tools.github.io/
-* CARTA: https://cartavis.org/
+* Viz tools:
+  ** casaviewer (comes with CASA)
+  ** CARTA: https://cartavis.org/
+  ** ds9 
+
 
 ## References
 
