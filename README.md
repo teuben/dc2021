@@ -23,10 +23,13 @@ NOTE:  around Nov 2, regularly reload this page as likely changes will occur.
 ## Data needed
 
 For some example scripts we use 
-the M100 data set as described in casaguide, but since this data is 23 GB, it can be culled down to 100MB, which can
-be easily downloaded from http://admit.astro.umd.edu/~teuben/QAC/qac_bench5.tar.gz   
+the M100 ALMA science verification data
+as described in [M100 Band3 casaguide](https://casaguides.nrao.edu/index.php?title=M100_Band3)
+but since this data is 23 GB, it will take some time and processing to bring
+it down to a more manageably size.  We have culled it down to 100MB, which can
+be downloaded from http://admit.astro.umd.edu/~teuben/QAC/qac_bench5.tar.gz   
 These contain 3 datasets: ALMA 12m, ALMA 7m and ALMA ACA (single dish), each with 70 aligned channels
-of 5 km/s width 
+of 5 km/s width, and the example script how the culling was done.
 
 * ALMA 
 * PHANGS-ALMA (CO(2-1))
@@ -37,7 +40,7 @@ You can find these scripts in the dc2019/scripts directory. The Makefile also ex
 
 1. M100_combine1.py - this is the script version of the casaguide, which we cover in class
 2. M100_trimdata.py - only needed if you want to reproduce the 100MB 5km/s dataset from the original 23 GB data
-3. M100_combine2.py - the QAC version of M100_combine1.py
+3. M100_combine2.py - the QAC version of M100_combine1.py (about 14 min)
 4. M100_tp2vis.py - combination using tp2vis
 5. M100_combine3.py - combination using sdintimaging (QAC version)
 5. M100_combine4.py - combination using tp2vis (QAC version)
@@ -47,6 +50,7 @@ You can find these scripts in the dc2019/scripts directory. The Makefile also ex
 ## Software 
 
 * CASA (5.8 or 6.4): https://casa.nrao.edu/
+* analysis scripts
 * MIRIAD
 * wsclean : https://gitlab.com/aroffringa/wsclean
 * tp2vis: https://github.com/tp2vis/distribute  or more experimental, via QAC: https://github.com/teuben/QAC/
