@@ -38,6 +38,7 @@ of 5 km/s width, and the example script how the culling was done.
 
 You can find these scripts in the dc2019/scripts directory. The Makefile also explains how to run them, and in which order!
 
+0. M100_getdata.sh -  a shortcut script that will get the 23GB data
 1. M100_combine1.py - this is the script version of the casaguide, which we cover in class
 2. M100_trimdata.py - only needed if you want to reproduce the 100MB 5km/s dataset from the original 23 GB data
 3. M100_combine2.py - the QAC version of M100_combine1.py (about 14 min)
