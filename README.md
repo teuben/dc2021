@@ -6,9 +6,11 @@ NOTE:  around Nov 2, regularly reload this page as likely changes will occur.
 
 ## Combination Techniques
 
+* 
 
-* [feather in CASA](https://casa.nrao.edu/casadocs/casa-5.4.1/image-combination/feather) 
-* casaguides: [M100 combination in CASA 5.7](https://casaguides.nrao.edu/index.php?title=M100_Band3_Combine_5.7) or
+
+* casaguides using feather:
+  [M100 combination in CASA 5.7](https://casaguides.nrao.edu/index.php?title=M100_Band3_Combine_5.7) or
   [M100 combination in CASA 6.1](https://casaguides.nrao.edu/index.php?title=M100_Band3_Combine_6.1)
 * [dc2019 talk by Ginsburg](https://keflavich.github.io/talks/FeatheringPresentation/FeatheringPresentation.slides.html?transition=fast); 
     see also his [uvcombine](https://github.com/radio-astro-tools/uvcombine/) package
@@ -30,16 +32,19 @@ of 5 km/s width.
 ## Software 
 
 * CASA (5.8 or 6.4): https://casa.nrao.edu/
+* MIRIAD
 * tp2vis: https://github.com/tp2vis/distribute  or more experimental, via QAC: https://github.com/teuben/QAC/
 * peel: https://iopscience.iop.org/article/10.3847/2515-5172/ab35d5/meta
 * Radio Astro Tools:  http://radio-astro-tools.github.io/
 * Viz tools:
-  ** casaviewer (comes with CASA)
-  ** CARTA: https://cartavis.org/
-  ** ds9 
+  * casaviewer (comes with CASA) or the task **imview**
+  * CARTA: https://cartavis.org/
+  * ds9 
 
 
 ## References
+
+* Vogel et al. 1984 : 
 
 * Jorsater and van Moorsel 1995, AJ, 110, 2037 : http://adsabs.harvard.edu/abs/1995AJ....110.2037J
 
@@ -47,8 +52,18 @@ of 5 km/s width.
 
 * Koda et al. 2019, PASP, 131, 054505 : https://ui.adsabs.harvard.edu/abs/2019PASP..131e4505K
 
-* CASA reference manual and cookbook : http://casa.nrao.edu/docs/cookbook/
+* Faridani et al. 2017, AN, 339, 87 :   https://ui.adsabs.harvard.edu/abs/2018AN....339...87F
+
+* CASA reference manual and cookbook : https://casa.nrao.edu/index_docs.shtml
+  * casaguides: https://casaguides.nrao.edu/index.php?title=Main_Page
   * Measurement Set: https://casa.nrao.edu/casadocs/latest/reference-material/measurement-set
+  * https://casadocs.readthedocs.io/en/stable/notebooks/synthesis_imaging.html :
+    [tclean](https://casadocs.readthedocs.io/en/stable/api/tt/casatasks.imaging.tclean.html)
+  * https://casadocs.readthedocs.io/en/stable/notebooks/image_combination.html :
+    [sdintimaging](https://casadocs.readthedocs.io/en/stable/api/tt/casatasks.imaging.sdintimaging.html) and
+	[feather](https://casadocs.readthedocs.io/en/stable/api/tt/casatasks.imaging.feather.html)
+
+
 
 * [Improving Image Fidelity on Astronomical Data: Radio Interferometer and Single-Dish Data Combination](https://www.lorentzcenter.nl/improving-image-fidelity-on-astronomical-data-radio-interferometer-and-single-dish-data-combination.html) Lorentz workshop 
 and the [github repo](https://github.com/teuben/dc2019) - 12 - 16 August 2019 (Leiden, Netherlands)
