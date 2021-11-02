@@ -6,27 +6,29 @@ NOTE:  around Nov 2, regularly reload this page as likely changes will occur.
 
 ## Combination Techniques
 
-* 
-
-
-* casaguides using feather:
-  [M100 combination in CASA 5.7](https://casaguides.nrao.edu/index.php?title=M100_Band3_Combine_5.7) or
-  [M100 combination in CASA 6.1](https://casaguides.nrao.edu/index.php?title=M100_Band3_Combine_6.1)
-* [dc2019 talk by Ginsburg](https://keflavich.github.io/talks/FeatheringPresentation/FeatheringPresentation.slides.html?transition=fast); 
+* Combining after deconvolution:
+  * feather
+     [M100 combination in CASA 5.7](https://casaguides.nrao.edu/index.php?title=M100_Band3_Combine_5.7) or
+     [M100 combination in CASA 6.1](https://casaguides.nrao.edu/index.php?title=M100_Band3_Combine_6.1)
+  * [dc2019 talk by Ginsburg](https://keflavich.github.io/talks/FeatheringPresentation/FeatheringPresentation.slides.html?transition=fast); 
     see also his [uvcombine](https://github.com/radio-astro-tools/uvcombine/) package
-* [tp2vis](https://github.com/tp2vis/distribute)
-* [hybrid](https://sites.google.com/site/jenskauffmann/research-notes/adding-zero-spa)
-* [sdintimaging](https://github.com/urvashirau/WidebandSDINT)
-* ...
+  * ssc (Faridani)
+* Combining before deconvolution:
+  * [tp2vis](https://github.com/tp2vis/distribute)
+  * [sdintimaging](https://github.com/urvashirau/WidebandSDINT)
+* Combining during deconvolution (Model Assisted Cleaning)
+  * [hybrid](https://sites.google.com/site/jenskauffmann/research-notes/adding-zero-spa)
 
 
 ## Data needed
 
-We use the M100 data set as described in CASA's wiki, but since this data is 23 GB, it can be culled down to 100MB, which can
-be easily downloaded from http://admit.astro.umd.edu/~teuben/QAC/qac_bench5.tar.gz   These are 3 datasets: ALMA 12m, ALMA 7m and ALMA ACA (single dish), each with 70 channels
-of 5 km/s width.
+For some example scripts we use 
+the M100 data set as described in casaguide, but since this data is 23 GB, it can be culled down to 100MB, which can
+be easily downloaded from http://admit.astro.umd.edu/~teuben/QAC/qac_bench5.tar.gz   
+These contain 3 datasets: ALMA 12m, ALMA 7m and ALMA ACA (single dish), each with 70 aligned channels
+of 5 km/s width 
 
-* ALMA
+* ALMA 
 * PHANGS-ALMA (CO(2-1))
 
 ## Software 
@@ -44,7 +46,7 @@ of 5 km/s width.
 
 ## References
 
-* Vogel et al. 1984 : 
+* Vogel et al. 1984 : https://ui.adsabs.harvard.edu/abs/1984ApJ...283..655V
 
 * Jorsater and van Moorsel 1995, AJ, 110, 2037 : http://adsabs.harvard.edu/abs/1995AJ....110.2037J
 
