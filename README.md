@@ -50,7 +50,7 @@ You can find these scripts in the dc2019/scripts directory. The Makefile also ex
 ## Software 
 
 * CASA (5.8 or 6.4): https://casa.nrao.edu/
-* analysis scripts
+* analysis scripts : https://casaguides.nrao.edu/index.php/Analysis_Utilities
 * MIRIAD
 * wsclean : https://gitlab.com/aroffringa/wsclean
 * tp2vis: https://github.com/tp2vis/distribute  or more experimental, via QAC: https://github.com/teuben/QAC/
