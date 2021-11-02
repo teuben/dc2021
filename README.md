@@ -31,10 +31,24 @@ of 5 km/s width
 * ALMA 
 * PHANGS-ALMA (CO(2-1))
 
+### Example Processing Steps
+
+You can find these scripts in the dc2019/scripts directory. The Makefile also explains how to run them, and in which order!
+
+1. M100_combine1.py - this is the script version of the casaguide, which we cover in class
+2. M100_trimdata.py - only needed if you want to reproduce the 100MB 5km/s dataset from the original 23 GB data
+3. M100_combine2.py - the QAC version of M100_combine1.py
+4. M100_tp2vis.py - combination using tp2vis
+5. M100_combine3.py - combination using sdintimaging (QAC version)
+5. M100_combine4.py - combination using tp2vis (QAC version)
+6. M100_combine6.py - combination using a Kaufman's model assisted cleaning approach (QAC version)
+6. M100_final.py - summarize and plot all M100 experiments (QAC version)
+
 ## Software 
 
 * CASA (5.8 or 6.4): https://casa.nrao.edu/
 * MIRIAD
+* wsclean : https://gitlab.com/aroffringa/wsclean
 * tp2vis: https://github.com/tp2vis/distribute  or more experimental, via QAC: https://github.com/teuben/QAC/
 * peel: https://iopscience.iop.org/article/10.3847/2515-5172/ab35d5/meta
 * Radio Astro Tools:  http://radio-astro-tools.github.io/
@@ -55,6 +69,8 @@ of 5 km/s width
 * Koda et al. 2019, PASP, 131, 054505 : https://ui.adsabs.harvard.edu/abs/2019PASP..131e4505K
 
 * Faridani et al. 2017, AN, 339, 87 :   https://ui.adsabs.harvard.edu/abs/2018AN....339...87F
+ 
+* Arras et al. 2018 : https://arxiv.org/abs/2008.11435
 
 * CASA reference manual and cookbook : https://casa.nrao.edu/index_docs.shtml
   * casaguides: https://casaguides.nrao.edu/index.php?title=Main_Page
